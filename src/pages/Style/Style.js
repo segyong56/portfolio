@@ -41,6 +41,10 @@ export const MenuContainer = styled.div`
   a:hover {
     color: yellow;
   }
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -50,6 +54,53 @@ export const LogoContainer = styled.div`
   font-weight: bold;
 `;
 
+export const ResponseMenu = styled.div`
+  display: none;
+  color: white;
+
+  .fas {
+    font-size: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
+`;
+
+const showMenu = keyframes`
+
+0%{
+
+  opacity: 0;
+  transform: translateX(200px);
+}
+
+100%{
+  opacity: 1;
+  transform:  translateX(0px);
+}
+`
+export const RightNavBar = styled.div`
+  width: 200px;
+  height: 100%;
+  z-index: 11;
+  position: fixed;
+  right: 0;
+  background-color: white;
+  padding: 100px 0px;
+  line-height: 70px;
+  text-align: center;
+  opacity: 0;
+  font-size: 20px;
+  font-weight: 600;
+
+  animation: ${showMenu} 1s forwards;
+  a {
+    color: #303030;
+    text-decoration: none;
+  }
+`;
 export const BackGroundModal = styled.div`
   position: fixed;
   top: 0;
@@ -68,10 +119,22 @@ export const BackGroundModal = styled.div`
   justify-content: center;
 `;
 
+//animation
 const showDialog = keyframes`
    from {
     opacity: 0;
     transform: translateY(-200px);
+   }
+   to{
+    opacity: 1;
+    transform: translateY(0px);
+   }
+`;
+
+const showCompo = keyframes`
+   from {
+    opacity: 0;
+    transform: translateY(100px);
    }
    to{
     opacity: 1;
@@ -113,6 +176,8 @@ export const AboutMe = styled.div`
   width: 60%;
   margin: auto;
   padding: 80px 10px 50px 10px;
+  opacity: 0;
+  animation: ${showCompo} 1s 0.2s forwards;
 
   .title {
     font-family: "Anton", sans-serif;
@@ -322,5 +387,159 @@ export const Answer = styled.div`
   transition: 0.3s;
   &:hover {
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
+  }
+`;
+
+// project component
+export const ProjectContainer = styled.div`
+  width: 60%;
+  margin: auto;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  opacity: 0;
+  animation: ${showCompo} 1s 0.2s forwards;
+  @media screen and (max-width: 1000px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 800px) {
+    width: 90%;
+  }
+`;
+
+export const Title = styled.div`
+  padding-top: 30px;
+  margin: auto;
+  color: #303030;
+  .title {
+    font-family: "Anton", sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    margin: 15px 0px;
+  }
+`;
+
+export const SlideContainer = styled.div`
+  width: 100%;
+  min-height: 700px;
+  height: 100%;
+  padding: 15px 10px;
+  margin: 20px 0px 30px 0px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
+
+  .header {
+    font-size: 17px;
+    text-indent: 10px;
+    font-weight: 500;
+    padding: 15px 0px;
+    font-family: "KoPubDotumMedium";
+  }
+`;
+
+export const ImageBox = styled.div`
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+  }
+`;
+
+export const DescriptionBox = styled.div`
+  margin-top: 20px;
+  padding: 0px 20px;
+
+  .title-box {
+    align-items: center;
+    font-family: "HSSaemaul-Regular" h1 {
+      text-indent: 5px;
+    }
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
+    span {
+      padding: 10px 0px 0px 10px;
+      color: grey;
+    }
+  }
+
+  .subtitle {
+    width: 100%;
+    text-align: right;
+    font-size: 14px;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+  }
+
+  .section {
+    padding: 10px 0px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .section-content {
+    margin: 10px;
+    font-size: 15px;
+    width: 100%;
+
+    span {
+      padding: 7px 15px;
+      background-color: lightgrey;
+      border-radius: 10px;
+      margin: 5px;
+    }
+
+    button {
+      padding: 5px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      margin: 10px 5px;
+      border: 1px solid black;
+      background-color: white;
+      cursor: pointer;
+    }
+  }
+`;
+
+// contact component
+export const Box = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #303030;
+`;
+export const ContactBox = styled.div`
+  padding: 20px 50px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #fefbf3;
+
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contacts {
+    margin: auto;
+    div {
+      margin: 8px 0px;
+      font-size: 18px;
+      i {
+        margin-right: 20px;
+      }
+    }
   }
 `;

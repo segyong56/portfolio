@@ -72,7 +72,9 @@ const Home = () => {
               >
                 <img src='../image/eatmeup/eatmeup.png' alt='eatmeup' />
                 <div className='subtitle'>EatMeUp</div>
-                <div></div>
+                <div className='button'>
+                  <Link to='/project'>View More</Link>
+                </div>
               </div>
               <div
                 className={
@@ -81,7 +83,9 @@ const Home = () => {
               >
                 <img src='../image/brrrrng/brrrrng.png' alt='brrrrng' />
                 <div className='subtitle'>BRRRRng</div>
-                <div></div>
+                <div className='button'>
+                  <Link to='/project'>View More</Link>
+                </div>
               </div>
               <div
                 className={
@@ -90,7 +94,9 @@ const Home = () => {
               >
                 <img src='../image/cog/cog.png' alt='cog' />
                 <div className='subtitle'>BRAIN</div>
-                <div></div>
+                <div className='button'>
+                  <Link to='/project'>View More</Link>
+                </div>
               </div>
               <div
                 className={
@@ -99,7 +105,9 @@ const Home = () => {
               >
                 <img src='../image/portfolio.png' alt='cog' />
                 <div className='subtitle'>세경's Portfolio</div>
-                <div></div>
+                <div className='button'>
+                  <Link to='/project'>View More</Link>
+                </div>
               </div>
             </div>
 

@@ -30,13 +30,13 @@ const ScrollD = styled.div`
     transform: translate(-50%, -50%) rotate(45deg);
     border-top: transparent;
     border-left: transparent;
-    animation: MoveArrow 1s ease-in-out infinite;
+    animation: Scrolldown 1s ease-in-out infinite;
   }
   ::after {
     top: 30%;
     animation-delay: 0.3s;
   }
-  @keyframes MoveArrow {
+  @keyframes Scrolldown {
     0% {
       opacity: 0;
     }

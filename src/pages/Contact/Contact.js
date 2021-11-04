@@ -1,6 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-import {} from "../Style/Style";
+import { Box, ContactBox } from "../Style/Style";
 
 const Contact = () => {
   return (
@@ -28,35 +27,4 @@ const Contact = () => {
   );
 };
 
-const Box = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: #303030;
-`;
-const ContactBox = styled.div`
-  padding: 20px 50px;
-  border: 1px solid black;
-  border-radius: 20px;
-  background-color: #fefbf3;
-
-  .title {
-    width: 100%;
-    text-align: center;
-  }
-
-  .contacts {
-    margin: auto;
-    div {
-      margin: 8px 0px;
-      font-size: 18px;
-      i {
-        margin-right: 20px;
-      }
-    }
-  }
-`;
 export default Contact;
