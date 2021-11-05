@@ -298,7 +298,7 @@ const Project = () => {
               <div className='section-title'>🔶 보러가기</div>
               <div className='section-content'>
                 [배포 링크] :
-                <button onClick={() => window.open("https://brrrrng.ga")}>
+                <button onClick={() => window.open("http://segyongportfolio-deploy.s3-website.ap-northeast-2.amazonaws.com")}>
                   Portfolio 보러가기
                 </button>
                 <br />
