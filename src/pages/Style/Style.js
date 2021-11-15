@@ -181,7 +181,7 @@ export const AboutMe = styled.div`
 
   .title {
     font-family: "Anton", sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: 2px;
     word-spacing: 5px;
     margin: 15px 0px;
@@ -248,8 +248,23 @@ export const SefieDescription = styled.div`
   }
 
   .underline {
-    text-decoration: underline;
     text-indent: 20px;
+  }
+
+  .small_txt {
+    font-size: 13px;
+    color: grey;
+  }
+
+  button {
+
+    border: none;
+    font-size: 17px;
+    background-color: white;    
+    cursor: pointer;
+    text-decoration: underline;
+
+    color: purple;
   }
 `;
 
@@ -368,7 +383,7 @@ export const Answer = styled.div`
 
   p {
     padding: 0px 10px;
-    line-height: 25px;
+    line-height: 40px;
   }
 
   .strong {
