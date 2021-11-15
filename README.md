@@ -1,4 +1,4 @@
-<img width="1436" alt="portfolio" src="https://user-images.githubusercontent.com/80687195/140319032-e187f1b5-3a4d-43c0-b73f-be2c78c838ce.png">
+<img width="1440" alt="스크린샷 2021-11-15 오후 8 13 47" src="https://user-images.githubusercontent.com/80687195/141772618-a57759e5-18e2-42ef-8375-8e60f6c4df16.png">
 
 ## 세경's portfolio
 - scroll값에 따른 header 배경색 변경 구현
