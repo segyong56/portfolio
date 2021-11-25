@@ -5,9 +5,6 @@
 - gototop 버튼 구현
 - typing 효과 구현
 
-### 💎 About Page
-![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/80687195/141770624-4717d0f0-21a8-4783-a302-533a7d3cc67e.gif)
-
 ### 💎 swiper을 이용한 슬라이드기능 구현
 ![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/80687195/141772309-a24db2e5-97ea-4d4c-afeb-73a59966ea4a.gif)
 
